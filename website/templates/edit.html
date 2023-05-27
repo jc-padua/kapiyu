@@ -1,0 +1,22 @@
+{% extends "posts_div.html" %}
+{% block title %}{{username}}'s Posts{% endblock %}
+{% block header %} {{username}}'s posts {% endblock %}
+{% block content %}
+<form method="POST" class="d-flex flex-column justify-content-center align-items-center">
+    <h3 align="center">Update {{user.username}}'s Profile</h3>
+    <div class="card" style="width: 25rem; padding: 2rem;">
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" class="form-control" value="{{user.email}}"
+                placeholder="Enter Email" />
+            <label for="username">Codename</label>
+            <input type="text" id="username" name="username" class="form-control" value="{{user.username}}"
+                placeholder="Enter Codename" />
+            <br />
+            <div align="center">
+                <button class="btn btn-primary" type="submit">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

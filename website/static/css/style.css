@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Light */
+    background-image: linear-gradient(180.3deg, rgba(221, 221, 221, 1) 5.5%, rgba(110, 136, 161, 1) 90.2%);
+    /* Dark */
+    /* background-image: linear-gradient(178.6deg, rgba(20, 36, 50, 1) 11.8%, rgba(124, 143, 161, 1) 83.8%); */
+    /* overflow: hidden; */
+}
+
+.main {
+    min-height: 74.4vh;
+}
+
+.login-form .card {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.post-username {
+    transition: scale .2s linear;
+}
+
+.post-username:hover {
+    scale: 1.1;
+}
